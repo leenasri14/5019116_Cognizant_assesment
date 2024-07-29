@@ -51,24 +51,32 @@ public class LibraryManagementSystem {
         Scanner scanner = new Scanner(System.in);
         LibraryManagementSystem library = new LibraryManagementSystem();
 
-        // Adding some sample books to the library
-        library.addBook(new Book("1", "The Great Gatsby", "F. Scott Fitzgerald"));
-        library.addBook(new Book("2", "1984", "George Orwell"));
-        library.addBook(new Book("3", "To Kill a Mockingbird", "Harper Lee"));
-        library.addBook(new Book("4", "The Catcher in the Rye", "J.D. Salinger"));
-        library.addBook(new Book("5", "Brave New World", "Aldous Huxley"));
-
         while (true) {
             System.out.println("Choose an operation:");
-            System.out.println("1. Search Book (Linear Search)");
-            System.out.println("2. Search Book (Binary Search)");
-            System.out.println("3. Exit");
+            System.out.println("1. Add Book");
+            System.out.println("2. Search Book (Linear Search)");
+            System.out.println("3. Search Book (Binary Search)");
+            System.out.println("4. Exit");
 
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
 
             switch (choice) {
                 case 1:
+                    // Input for adding a new book
+                    System.out.print("Enter Book ID: ");
+                    String bookId = scanner.nextLine();
+                    System.out.print("Enter Book Title: ");
+                    String title = scanner.nextLine();
+                    System.out.print("Enter Book Author: ");
+                    String author = scanner.nextLine();
+
+                    Book newBook = new Book(bookId, title, author);
+                    library.addBook(newBook);
+                    System.out.println("Book added successfully.");
+                    break;
+                case 2:
+                    // Search for a book using linear search
                     System.out.print("Enter the title of the book to search (Linear Search): ");
                     String linearSearchTitle = scanner.nextLine();
                     Book foundLinearBook = library.linearSearch(linearSearchTitle);
@@ -78,7 +86,8 @@ public class LibraryManagementSystem {
                         System.out.println("Book not found.");
                     }
                     break;
-                case 2:
+                case 3:
+                    // Search for a book using binary search
                     library.sortBooks(); // Ensure the list is sorted before binary search
                     System.out.print("Enter the title of the book to search (Binary Search): ");
                     String binarySearchTitle = scanner.nextLine();
@@ -89,7 +98,7 @@ public class LibraryManagementSystem {
                         System.out.println("Book not found.");
                     }
                     break;
-                case 3:
+                case 4:
                     System.out.println("Exiting.");
                     scanner.close();
                     return;
