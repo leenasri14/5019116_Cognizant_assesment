@@ -1,0 +1,18 @@
+Time Complexity Comparison:
+
+  Linear Search:
+    Best-case: O(1) (when the element is found at the beginning)
+    Average-case: O(n)
+    Worst-case: O(n) (when the element is at the end or not found)
+  Binary Search:
+    Best-case: O(1) (when the element is at the middle)
+    Average-case: O(log n)
+    Worst-case: O(log n) (when the element is not found or at the far end)
+Suitability for the Platform:
+  Linear Search: Suitable for smaller datasets or unsorted arrays. It doesn't require sorting but is less efficient for 
+large datasets.
+  Binary Search: More suitable for larger datasets where the array is sorted. It has a significantly lower 
+time complexity compared to linear search, making it faster for large datasets.
+
+Given the need for fast performance in an e-commerce platform, binary search is generally more suitable, 
+provided the array of products is kept sorted. This can significantly improve search performance and user experience.
