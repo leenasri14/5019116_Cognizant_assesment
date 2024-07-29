@@ -1,0 +1,79 @@
+Project Objective
+   The objective of this project is to develop an efficient and user-friendly inventory management system for a warehouse.
+The system will facilitate the management of products, including adding, updating, deleting, and displaying product 
+information, ensuring efficient data storage and retrieval.
+
+Key Features
+
+     Add Product: Add new products to the inventory with attributes like product ID, name, quantity, and price.
+     Update Product: Update existing product details.
+     Delete Product: Remove products from the inventory.
+     Display Inventory: Display the current inventory of all products.
+     User Interaction:
+        User-friendly interface for managing inventory via a command-line interface.
+        Input validation to ensure correct data entry.
+         Technology Stack
+    Programming Language: Java
+    Data Structures: HashMap for efficient storage and retrieval of products.
+
+
+Implementation Details
+    Product Class:
+
+      Attributes: productId, productName, quantity, price.
+      Methods: Getters, setters, and toString() method for easy representation.
+
+    Inventorymanagementsystem Class:
+
+          Data Structure: HashMap<String, Product> to store products.
+          Methods:
+              addProduct(Product product): Adds a new product.
+              updateProduct(String productId, Product updatedProduct): Updates an existing product.
+              deleteProduct(String productId): Deletes a product by its ID.
+              getProduct(String productId): Retrieves a product by its ID.
+              displayInventory(): Displays all products in the inventory.
+
+    driverclass Class:
+
+        User Interaction: Uses the Scanner class to take input from the user.
+        Menu System: Provides options to add, update, delete products, display the inventory, or exit the program.
+        Switch Case: Handles user choices and performs the appropriate operations.
+        Development Phases
+
+Planning:
+
+    Define project objectives and requirements.
+    Identify key features and functionality.
+    Select appropriate data structures.
+
+Design:
+
+    Design the classes and methods required for the system.
+    Plan the user interaction flow.
+
+Implementation:
+
+    Develop the Product and InventoryManagementSystem classes.
+    Implement the Main class to handle user interaction.
+
+Testing:
+
+  Test individual methods for adding, updating, deleting, and displaying products.
+  Perform integration testing to ensure all components work together smoothly.
+  Conduct user testing to validate the user interface and experience.
+
+Deployment:
+
+  Deploy the application in a suitable environment.
+  Provide user documentation and training.
+  Time Complexity Analysis
+  Add Product: O(1) - Constant time insertion in HashMap.
+  Update Product: O(1) - Constant time update in HashMap.
+  Delete Product: O(1) - Constant time deletion in HashMap.
+  Retrieve Product: O(1) - Constant time retrieval from HashMap.
+
+
+
+
+
+
