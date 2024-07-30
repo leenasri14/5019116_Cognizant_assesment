@@ -1,0 +1,52 @@
+Sorting Algorithms
+
+Bubble Sort:
+
+    Definition: A simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
+      Time Complexity:
+      Best-case: O(n)
+      Average-case: O(n^2)
+      Worst-case: O(n^2)
+
+Insertion Sort:
+
+  Definition: Builds the final sorted array one item at a time by comparing each new item with the already sorted items and inserting it in its correct position.
+    Time Complexity:
+    Best-case: O(n)
+    Average-case: O(n^2)
+    Worst-case: O(n^2)
+    
+Quick Sort:
+
+  Definition: A divide-and-conquer algorithm that picks an element as a pivot and partitions the array around the pivot. Recursively applies the same process to the sub-arrays.
+    Time Complexity:
+    Best-case: O(n log n)
+    Average-case: O(n log n)
+    Worst-case: O(n^2) (rare)
+
+Merge Sort:
+
+  Definition: A divide-and-conquer algorithm that divides the array into halves, sorts each half, and then merges the sorted halves back together.
+    Time Complexity:
+    Best-case: O(n log n)
+    Average-case: O(n log n)
+    Worst-case: O(n log n)
+
+Time Complexity Comparison:
+
+   Bubble Sort:
+    Best-case: O(n)
+    Average-case: O(n^2)
+    Worst-case: O(n^2)
+  Quick Sort:
+    Best-case: O(n log n)
+    Average-case: O(n log n)
+    Worst-case: O(n^2)
+
+Why Quick Sort is Generally Preferred Over Bubble Sort:
+
+  Efficiency: Quick Sort is more efficient for large datasets due to its average-case time complexity of O(n log n) compared to Bubble Sort's O(n^2).
+  Performance: Quick Sort typically performs faster because it reduces the number of comparisons and swaps needed.
+  Adaptability: Quick Sort can be implemented as an in-place sort, saving space compared to some other sorting algorithms like Merge Sort.
+
+
