@@ -1,0 +1,30 @@
+Understand Linked Lists
+  Singly Linked List:
+
+      A linked list where each node contains data and a reference (or link) to the next node in the sequence.
+      Advantages: Simple to implement, efficient for insertions/deletions at the beginning of the list.
+
+  Doubly Linked List:
+
+    A linked list where each node contains data, a reference to the next node, and a reference to the previous node.
+    Advantages: Allows traversal in both directions (forward and backward), more flexible for certain operations.
+
+Analysis
+    Time Complexity:
+
+      Add: O(n) – Adding a task involves traversing the list to the end.
+      Search: O(n) – Linear search through the linked list.
+      Traverse: O(n) – Iterating through all elements.
+      Delete: O(n) – Linear search to find the task, then O(1) to unlink the node.
+
+  Advantages of Linked Lists Over Arrays for Dynamic Data:
+
+    Dynamic Size: Linked lists can grow and shrink dynamically, unlike arrays with fixed size.
+    Efficient Insertions/Deletions: Inserting or deleting elements in a linked list does not require shifting elements as in an array.
+    Memory Utilization: Linked lists can be more memory efficient as they allocate memory as needed, while arrays may have unused allocated space.
+    This program allows users to manage tasks by adding, searching, traversing, and deleting tasks using a singly linked list. It demonstrates basic linked list operations and their corresponding time complexities.
+
+
+
+
+
