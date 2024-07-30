@@ -1,0 +1,56 @@
+Understand Array Representation
+
+How Arrays are Represented in Memory:
+      Memory Layout: Arrays are contiguous blocks of memory, meaning all elements are stored sequentially in a single block.
+      Indexing: Each element in the array can be accessed using its index, starting from 0. The memory address of each element can be calculated quickly based on the base address and the index.
+
+Advantages:
+  Fast Access: Constant time (O(1)) access to elements via indexing.
+  Predictable Memory Usage: Fixed size allocated in memory makes it easy to manage.
+
+Setup
+
+Employee Class:
+
+  Attributes:
+  employeeId (String): Unique identifier for each employee.
+  name (String): Employee's name.
+  position (String): Job title of the employee.
+  salary (double): Employee's salary.
+
+Implementation
+  Array to Store Employee Records:
+  
+    An array will store employee objects.
+    Methods will be implemented to add, search, traverse, and delete employees in the array
+Analysis
+
+Time Complexity:
+
+Add Employee:
+  Time Complexity: O(1) - Adding an element at the end of the array.
+  Search Employee:
+  Time Complexity: O(n) - Linear search through the array.
+  Traverse Employees:
+  Time Complexity: O(n) - Iterating through all elements in the array.
+  Delete Employee:
+  Time Complexity: O(n) - Linear search to find the employee, and O(1) to remove and shift the last element.
+  Limitations of Arrays:
+
+  Fixed Size:
+      Once the array is created, its size cannot be changed. This limits the number of employees that can be stored.
+  Inefficient Deletions: Removing an element requires shifting elements, which can be inefficient.
+  Search Efficiency: Linear search can be slow for large datasets.
+
+When to Use Arrays:
+
+    Small Dataset: When managing a small, fixed number of employee records.
+    Fast Access: When fast access to elements via index is required.
+    Simple Data Management: When a simple and straightforward data structure is needed without frequent insertions and deletions.
+
+
+
+
+
+
+
