@@ -1,0 +1,26 @@
+
+Concept of Recursion:
+
+    Recursion is a method of solving problems where a function calls itself as a subroutine.
+    It breaks down a problem into smaller instances of the same problem.
+
+Base Case: The condition under which the recursion ends.
+Recursive Case: The part of the function where the function calls itself.
+
+Advantages:
+
+  Simplifies code for problems that can be broken down into similar sub-problems (e.g., factorial, Fibonacci sequence).
+  Provides a clear, readable approach for certain algorithms.
+
+Setup
+  Create a method to calculate the future value using a recursive approach.
+
+Analysis
+    Time Complexity:
+
+      The time complexity of the recursive algorithm is O(n), where n is the number of years. Each recursive call reduces the number of years by one until it reaches zero.
+  
+  Optimizing the Recursive Solution:
+
+      Memoization: Store the results of previous calculations to avoid redundant calculations. This technique can optimize the solution by reducing the number of recursive calls.
+      Iterative Approach: Convert the recursive solution into an iterative one to avoid the overhead associated with recursive calls and potential stack overflow for large inputs.
